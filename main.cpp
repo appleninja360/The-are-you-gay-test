@@ -18,7 +18,7 @@ int main() {
     std::cin >> startGame;
 
 
-    if (startGame = 1) {
+    if (startGame == 1) {
 
         std::cout << "\nWhat is you gender\n\n";
         std::cout << "1 male\n";
@@ -27,7 +27,7 @@ int main() {
         std::cout << "Enter your answer (1-2): \n";
         std::cin >> gender;
 
-        if (gender = 1){
+        if (gender == 1){
             std::cout << "\nDo you like men?\n\n";
 
             std::cout << "(1) No!\n";
@@ -51,7 +51,7 @@ int main() {
                 }
         }
 
-        else if (gender = 2){
+        else if (gender == 2){
 
             std::cout << "\nDo you like wemen?\n\n";
             std::cout << "(1) No!\n";
@@ -76,8 +76,13 @@ int main() {
         }
 
     }
-    else {
+    else if (startGame == 2) {
         //quit
-        std::cout << "quit";
+        std::cout << "Quit";
+       return 0;
+    }
+
+    else {
+        std::cout << "\nInvalid input\n";
     }
 }
